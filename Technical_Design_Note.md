@@ -6,7 +6,7 @@ The application is a React and TypeScript single-page frontend backed by an Expr
 
 The backend is organized into route, controller, middleware, model and service layers. Routes authenticate and authorize requests, controllers validate and coordinate operations, Mongoose models describe stored entities and indexes, and the recurring service contains scheduled generation logic. A shared error middleware converts validation, cast and duplicate-key errors into HTTP responses.
 
-The local setup runs the Vite development server and the Express API separately. The API connects to MongoDB before it begins listening. The recurring job runs daily. No hosted deployment is configured in this submission; deployment requires environment-specific frontend and API hosting plus a MongoDB replica set.
+The local setup runs the Vite development server and the Express API separately. The API connects to MongoDB before it begins listening. The recurring job runs daily. The application is deployed live with the frontend hosted on Vercel and the backend hosted on Render, backed by a MongoDB replica set for transaction support.
 
 ## 2. Data model and relationships
 
